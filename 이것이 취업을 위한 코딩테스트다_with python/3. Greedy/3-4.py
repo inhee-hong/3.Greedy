@@ -1,4 +1,4 @@
-# 
+# my_code
 
 N, K = map(int, input().split())
 
