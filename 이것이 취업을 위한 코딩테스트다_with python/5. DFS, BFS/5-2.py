@@ -1,3 +1,5 @@
+#큐는 선입선출 구조이다. 스택과는 달리, 먼저 삽입된 원소부터 삭제된다.
+
 from collections import deque
 
 #큐(Queue) 구현을 위해 deque 라이브러리 사용
