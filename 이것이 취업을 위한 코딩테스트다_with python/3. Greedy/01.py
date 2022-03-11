@@ -22,8 +22,7 @@ while True:
                 break
             else:
                 i += scary[i]
-            print(i)
-            print(num)
+
     else:
         break
         
