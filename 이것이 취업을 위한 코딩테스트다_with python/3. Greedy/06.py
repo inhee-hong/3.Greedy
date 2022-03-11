@@ -28,3 +28,4 @@ def solution(food_times, k):
                     else:    
                         i += 1
     return i + 1
+ 
