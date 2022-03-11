@@ -19,12 +19,7 @@ def solution(food_times, k):
                     i = 0
                 else:    
                     i += 1
-               # print(ans)
-               # print(i)
-               # print(food_times)
-               # print(food_times[i])
             else:
-               # print(food_times)
                 if ans == all_time:
                     break
                 else:
@@ -32,7 +27,4 @@ def solution(food_times, k):
                         i = 0
                     else:    
                         i += 1
-               # print(ans)
-              #  print(i)
-               # print(food_times)
     return i + 1
