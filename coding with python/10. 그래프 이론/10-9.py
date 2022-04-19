@@ -16,3 +16,4 @@ for i in range(n):
         else:
             sum += number[Q[i][j]-1]
     print(sum)
+ 
