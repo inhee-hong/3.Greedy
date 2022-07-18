@@ -2,13 +2,10 @@
 
 from itertools import permutations
 
-n = list(input())
+n = input()
+a = sorted(set(permutations(n, len(n))))
 
-new = list(permutations(n, len(n)))
-
-a = sorted(set(new))
-
-if a.index(tuple(n)) == (len(n) - 1):
+if a.index(tuple(n)) == (len(a) - 1):
     print(0)
 else:
     print(''.join(a[a.index(tuple(n)) + 1]))
