@@ -8,7 +8,6 @@ two = 2
 three = 3
 five = 5
 
-dp
 for i in range(2, n):
     two_ = two *  i
     three_ = three *  i
