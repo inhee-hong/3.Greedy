@@ -60,8 +60,8 @@ def dfs(x, y):
 ########## BFS ##########
 
 def bfs(x, y):
-
-    queue = deque([(x, y)])
+    
+    queue = deque([x, y])
 
     dx = [-1, 1, 0, 0]
     dy = [0, 0, -1, 1]
@@ -70,13 +70,16 @@ def bfs(x, y):
 
         x, y = queue.popleft()
 
-        for i in range(4):
-            nx = x + dx[i]
-            ny = y + dy[i]
+        if graph[x][y] == 0:
+            cnt += 1
+            graph[x][y] = -1
 
-            if (0 <= nx < n) and (0 <= ny < m):
-                if graph[nx][ny] == 1:
-                    queue.append((nx, ny))
-                    graph[nx][ny] = -1
+            for i in range(4):
+                nx = x + dx[i]
+                ny = y + dy[i]
+
+                if (0 <= nx < n) and (0 <= ny < n):
+                    if graph[nx][ny] == 0:
+                        queue.append((nx, ny))
                     
 ################################
