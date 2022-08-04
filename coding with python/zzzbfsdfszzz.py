@@ -70,10 +70,6 @@ def bfs(x, y):
 
         x, y = queue.popleft()
 
-        if x == n-1 and y == m-1:
-            ans += 1
-            break
-
         for i in range(4):
             nx = x + dx[i]
             ny = y + dy[i]
