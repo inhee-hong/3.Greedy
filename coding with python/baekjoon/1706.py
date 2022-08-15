@@ -29,3 +29,7 @@ for a in range(c):
 
 words.sort()
 print(words[0])
+
+
+## 가로, 세로 구하기 (cross는 2차원배열)
+## list(zip(*cross))
