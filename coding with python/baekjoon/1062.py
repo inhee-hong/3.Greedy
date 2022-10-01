@@ -1,3 +1,6 @@
+https://my-coding-notes.tistory.com/370
+    
+
 import sys, itertools as it
 input = sys.stdin.readline
 
